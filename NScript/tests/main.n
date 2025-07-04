@@ -1,0 +1,25 @@
+YE mylist BOOM [1, 2, 3, 4]
+YE mydict BOOM {"a": 10, "b": 20, "c": 30}
+YE mystr BOOM "abcdefg"
+YE mylist BOOM [10, 20, 30, 40, 50, 60, 70]
+
+SPIN BOOM idx, val IN mylist WE
+    FELLA `List index: ${idx}, value: ${val}`
+POW
+
+SPIN BOOM key, val IN mydict WE
+    FELLA `Dict key: ${key}, value: ${val}`
+POW
+
+FELLA mystr[2]
+FELLA mylist[3]
+
+FELLA mystr[2:5]
+FELLA mylist[2:5]
+
+FELLA mystr[1:7:2]
+FELLA mylist[1:7:3]
+
+FELLA mystr[:4]
+FELLA mylist[4:]
+FELLA mystr[:]
