@@ -52,9 +52,9 @@ def main():
         info(repo_url)
     elif len(sys.argv) == 2 and sys.argv[1] in ("-h", "--help"):
         print("Usage:")
-        print("  python main.py -v                       Show version")
-        print("  python main.py install <repo_url>      Download GitHub repository (requires packagesettings.nls)")
-        print("  python main.py info <repo_url>         Show info from packagesettings.nls")
+        print("borganizer -v                       Show version")
+        print("borganizer install <repo_url>      Download GitHub repository (requires packagesettings.nls)")
+        print("borganizer info <repo_url>         Show info from packagesettings.nls")
     else:
         print("Invalid usage. Use -h for help.")
 
