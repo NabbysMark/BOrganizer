@@ -79,7 +79,6 @@ def downloadpackage(repo_url, output_dir=None):
 
     if not check_packagesettings_exists(user, repo):
         print(f"Error: 'packagesettings.nls' not found in repository '{user}/{repo}'. Download aborted.")
-        return
 
     api_url = f"https://api.github.com/repos/{user}/{repo}/contents"
 
